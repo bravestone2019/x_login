@@ -22,7 +22,7 @@ function LoginPage() {
         <h1>Login Page</h1>
         {errorMessage && <p>{errorMessage}</p>}
         {isLoggedIn ? (
-          <h2>Welcome, user!</h2> //s
+          <h2>Welcome, user!</h2> 
         ) : (
           <form onSubmit={handleSubmit}>
             <div>
@@ -32,6 +32,7 @@ function LoginPage() {
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
+                  placeholder='username'
                   required
                 />
               </label>
@@ -43,6 +44,7 @@ function LoginPage() {
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
+                  placeholder='password'
                   required
                 />
               </label>
