@@ -28,6 +28,7 @@ function LoginPage() {
             <div>
               <label>
                 Username:
+                </label>
                 <input
                   type="text"
                   value={username}
@@ -35,11 +36,11 @@ function LoginPage() {
                   placeholder='username'
                   required
                 />
-              </label>
             </div>
             <div>
               <label>
                 Password:
+                </label>
                 <input
                   type="password"
                   value={password}
@@ -47,7 +48,6 @@ function LoginPage() {
                   placeholder='password'
                   required
                 />
-              </label>
             </div>
             <button type="submit">Submit</button>
           </form>
